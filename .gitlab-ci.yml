@@ -1,0 +1,27 @@
+stages:
+  - build
+  - deploy
+
+build:
+  image: node:14.15-alpine
+  stage: build
+  only:
+    - develop
+  script:
+    - echo "${ENV}" > .env
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 hour
+
+deploy:
+  image: python:latest
+  stage: deploy
+  only:
+    - develop
+  script:
+    - pip install awscli
+    - aws s3 cp ./dist s3://your-s3 --recursive
+

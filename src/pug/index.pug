@@ -1,0 +1,431 @@
+extends layout/_main.pug
+
+block title
+  title Resume
+
+block content
+  #preloader
+  section#vcard-area.vcard-area-section
+    .container
+      .row
+        .vcard-area-content.col-sm-5
+          .left-menubar
+            .navigation-bar.box-shadow-code.ul-li.text-center
+              ul.menu-item.ul-li-block
+                li
+                  a(href='#1')
+                    span.fas.fa-user
+                    | About
+                li
+                  a(href='#2')
+                    span.fas.fa-briefcase
+                    | Resume
+                li#tech
+                  a(href='#3')
+                    span.fas.fa-cube
+                    | Skill
+                li
+                  a(href='#4')
+                    span.fas.fa-tasks
+                    | Project
+                li
+                  a(href='#5')
+                    span.fas.fa-address-book
+                    | Contact
+          .vcard-pro-pic
+            .profile-details
+              .profile-img-details.box-shadow-code.text-center.pt60
+                .profile-img.mb15
+                  img(src='https://via.placeholder.com/200.png?text=avatar')
+                  .download-cv
+                    a(href='#')
+                      span.fas.fa-download
+                .pro-name.pb35
+                  span.name Your name
+                  span.designation Your title
+                .pro-text.mb50
+                  p Your awesome description
+                .pro-social.ul-li
+                  ul.social-list.ul-li
+                    li
+                      a(href='https://example.com' target="_blank")
+                        span.fas.fa-globe
+                    li
+                      a(href='https://github.com' target="_blank")
+                        span.fab.fa-github
+                    li
+                      a(href='tel:0123456789')
+                        span.fas.fa-phone
+                    li
+                      a(href='mailto:example@example.com')
+                        span.fas.fa-envelope
+        .vcard-main-content.box-shadow-code.col-sm-7
+          #vcard-ascensor
+            #1.scroll-out
+              .floor.about-me
+                .section-content
+                  .section-title.pb30
+                    h2 About me
+                  .about-profile.ul-li
+                    ul.admin-profile.ul-li-block
+                      li
+                        span.pro-title.red Name
+                        span.pro-detail Your name
+                      li
+                        span.pro-title.red Birthday
+                        span.pro-detail 01/01/2000
+                      li
+                        span.pro-title.red Phone
+                        span.pro-detail 0123456789
+                      li
+                        span.pro-title.red Email
+                        span.pro-detail example@example.com
+                  .service-area.pt50
+                    .section-title
+                      h2 Skill
+                    .service-area-content
+                      .service-area-icon
+                        .service-icon
+                          .service-area-text.mt15
+                            .service-title
+                              h3 Backend
+                            .service-text.mt15
+                              p Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                              p Vestibulum sagittis, purus non pharetra hendrerit, dui orci gravida quam, eu semper orci ipsum viverra nisl
+                      .service-area-icon.mt10
+                        .service-icon
+                          .service-area-text.mt15
+                            .service-title
+                              h3 Frontend
+                            .service-text.mt15
+                              p Vestibulum accumsan, sem eu convallis tristique, ligula dui laoreet mi, non elementum lorem lorem eget augue
+                              p Ut nec euismod purus
+                      .service-area-icon.mt10
+                        .service-icon
+                          .service-area-text.mt15
+                            .service-title
+                              h3 Database
+                            .service-text.mt15
+                              p Integer nibh turpis, egestas vitae augue nec, rhoncus auctor mi
+                              p Nam pulvinar, nisi eget placerat suscipit, purus sem luctus lacus, sit amet tincidunt eros turpis nec nisl
+                      .service-area-icon
+                        .service-icon
+                          .service-area-text.mt15
+                            .service-title
+                              h3 Other
+                            .service-text.mt15
+                              p Sed vel enim vitae lectus lacinia vehicula
+                              p Aenean sit amet augue eu elit dictum maximus efficitur a lorem
+                  .fun-fact.disply.pt50.pb30
+                    .section-title.pb30
+                      h2 Project
+                    .fun-fact-content
+                      span.achivement-icon-text
+                        .achivement-text
+                          a.number.green(href='https://pr1.com' target='_blank') Project 1
+                          span.number-text Laravel
+                      span.achivement-icon-text
+                        .achivement-text
+                          a.number.green(href='https://pr2.com' target='_blank') Project 2
+                          span.number-text Vue
+                      span.achivement-icon-text
+                        .achivement-text
+                          a.number.green(href='https://pr3.com' target='_blank') Project 3
+                          span.number-text Mysql
+                      span.achivement-icon-text
+                        .achivement-text
+                          a.number.green(href='https://pr4.com' target='_blank') Project 4
+                          span.number-text Redis
+            #2.scroll-out
+              .floor.resume
+                .section-content
+                  .section-title.pb30
+                    h2 Resume
+                  .my-resume-content
+                    .lan-title
+                      span Education
+                    .resume-qualification
+                      .qualification-details
+                        .year-institute.pull-left.mr60
+                          .qualification-year
+                            span.green 2012 - 2016
+                          .qualification-institute
+                            span Your education
+                        .qualification-dec
+                          p Information Technology
+                          p Computer Science
+                  .my-resume-content
+                    .lan-title
+                      span Experience
+                    .resume-qualification
+                      .qualification-details
+                        .year-institute.pull-left.mr60
+                          .qualification-year
+                            span.green 2016
+                          .qualification-institute
+                            span First Company
+                        .qualification-dec
+                          p Fresher
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      .qualification-details
+                        .year-institute.pull-left.mr60
+                          .qualification-year
+                            span.green 2017 - 2018
+                          .qualification-institute
+                            span Second Company
+                        .qualification-dec
+                          p Backend Developer
+                          p Vestibulum sagittis, purus non pharetra hendrerit, dui orci gravida quam, eu semper orci ipsum viverra nisl
+                      .qualification-details
+                        .year-institute.pull-left.mr60
+                          .qualification-year
+                            span.green 2018 - 2019
+                          .qualification-institute
+                            span Third Company
+                        .qualification-dec
+                          p Fullstack Developer
+                          p Vestibulum accumsan, sem eu convallis tristique, ligula dui laoreet mi, non elementum lorem lorem eget augue
+                      .qualification-details
+                        .year-institute.pull-left.mr60
+                          .qualification-year
+                            span.green 2019 - now
+                          .qualification-institute
+                            span Fourth Company
+                        .qualification-dec
+                          p Fullstack Developer
+                          p Ut nec euismod purus
+            #3.scroll-out
+              .floor.portfolio
+                .section-content
+                  .section-title.pb30
+                    h2 Technology
+                  .portfolio-content
+                    .portfolio-tab
+                      #filters.button-group
+                        button.tab-button.active(data-filter='*') All
+                        button.tab-button(data-filter='.php') PHP
+                        button.tab-button(data-filter='.database') Database
+                        button.tab-button(data-filter='.javascript') Javascript
+                        button.tab-button(data-filter='.html-css') HTML/CSS
+                        button.tab-button(data-filter='.other') Other
+                      .portfolio-tab-text-pic.pt40
+                        #posts
+                          .item.javascript
+                            .item-wrap(title='angular')
+                                img(src='https://via.placeholder.com/128.png?text=angular')
+                          .item.other
+                            .item-wrap(title='apache')
+                                img(src='https://via.placeholder.com/128.png?text=apache')
+                          .item.html-css
+                            .item-wrap(title='bootstrap')
+                                img(src='https://via.placeholder.com/128.png?text=bootstrap')
+                          .item.php
+                            .item-wrap(title='codeigniter')
+                                img(src='https://via.placeholder.com/128.png?text=codeigniter')
+                          .item.php
+                            .item-wrap(title='composer')
+                                img(src='https://via.placeholder.com/128.png?text=composer')
+                          .item.other
+                            .item-wrap(title='docker')
+                                img(src='https://via.placeholder.com/128.png?text=docker')
+                          .item.javascript
+                            .item-wrap(title='express')
+                                img(src='https://via.placeholder.com/128.png?text=express')
+                          .item.database
+                            .item-wrap(title='firebase')
+                                img(src='https://via.placeholder.com/128.png?text=firebase')
+                          .item.other
+                            .item-wrap(title='git')
+                                img(src='https://via.placeholder.com/128.png?text=git')
+                          .item.other
+                            .item-wrap(title='github')
+                                img(src='https://via.placeholder.com/128.png?text=github')
+                          .item.other
+                            .item-wrap(title='gitlab')
+                                img(src='https://via.placeholder.com/128.png?text=gitlab')
+                          .item.other
+                            .item-wrap(title='heroku')
+                                img(src='https://via.placeholder.com/128.png?text=heroku')
+                          .item.other
+                            .item-wrap(title='jekyll')
+                                img(src='https://via.placeholder.com/128.png?text=jekyll')
+                          .item.javascript
+                            .item-wrap(title='jquery')
+                                img(src='https://via.placeholder.com/128.png?text=jquery')
+                          .item.php
+                            .item-wrap(title='laravel')
+                                img(src='https://via.placeholder.com/128.png?text=laravel')
+                          .item.html-css
+                            .item-wrap(title='less')
+                                img(src='https://via.placeholder.com/128.png?text=less')
+                          .item.php
+                            .item-wrap(title='magento')
+                                img(src='https://via.placeholder.com/128.png?text=magento')
+                          .item.database
+                            .item-wrap(title='mongodb')
+                                img(src='https://via.placeholder.com/128.png?text=mongodb')
+                          .item.other
+                            .item-wrap(title='netlify')
+                                img(src='https://via.placeholder.com/128.png?text=netlify')
+                          .item.other
+                            .item-wrap(title='nginx')
+                                img(src='https://via.placeholder.com/128.png?text=nginx')
+                          .item.database
+                            .item-wrap(title='mysql')
+                                img(src='https://via.placeholder.com/128.png?text=mysql')
+                          .item.javascript
+                            .item-wrap(title='nodejs')
+                                img(src='https://via.placeholder.com/128.png?text=nodejs')
+                          .item.javascript
+                            .item-wrap(title='npm')
+                                img(src='https://via.placeholder.com/128.png?text=npm')
+                          .item.javascript
+                            .item-wrap(title='nuxt')
+                                img(src='https://via.placeholder.com/128.png?text=nuxt')
+                          .item.html-css
+                            .item-wrap(title='pug')
+                                img(src='https://via.placeholder.com/128.png?text=pug')
+                          .item.other
+                            .item-wrap(title='puppeteer')
+                                img(src='https://via.placeholder.com/128.png?text=puppeteer')
+                          .item.other
+                            .item-wrap(title='pusher')
+                                img(src='https://via.placeholder.com/128.png?text=pusher')
+                          .item.javascript
+                            .item-wrap(title='react')
+                                img(src='https://via.placeholder.com/128.png?text=react')
+                          .item.html-css
+                            .item-wrap(title='sass')
+                                img(src='https://via.placeholder.com/128.png?text=sass')
+                          .item.other
+                            .item-wrap(title='scrapy')
+                                img(src='https://via.placeholder.com/128.png?text=scrapy')
+                          .item.other
+                            .item-wrap(title='socketio')
+                                img(src='https://via.placeholder.com/128.png?text=socketio')
+                          .item.other
+                            .item-wrap(title='swagger')
+                                img(src='https://via.placeholder.com/128.png?text=swagger')
+                          .item.javascript
+                            .item-wrap(title='typescript')
+                                img(src='https://via.placeholder.com/128.png?text=typescript')
+                          .item.javascript
+                            .item-wrap(title='vue')
+                                img(src='https://via.placeholder.com/128.png?text=vue')
+                          .item.javascript
+                            .item-wrap(title='webpack')
+                                img(src='https://via.placeholder.com/128.png?text=webpack')
+                          .item.javascript
+                            .item-wrap(title='yarn')
+                                img(src='https://via.placeholder.com/128.png?text=yarn')
+                          .item.php
+                            .item-wrap(title='yii')
+                                img(src='https://via.placeholder.com/128.png?text=yii')
+                          .item.php
+                            .item-wrap(title='zend')
+                                img(src='https://via.placeholder.com/128.png?text=zend')
+            #4.scroll-out
+              .floor.blog
+                .section-content
+                  .section-title.pb30
+                    h2 Project
+                  .blog-content.owl-carousel
+                    .blog-text-pic.pb
+                      .blog-pic.pb20
+                        img(src='https://via.placeholder.com/300.png?text=Project 1' alt='img')
+                      .blog-meta.ul-li
+                        ul.meta-list.ul-li
+                          li
+                            span.green.fas.fa-cube
+                            | PHP
+                      .blog-text.mt5
+                        .blog-title.mb15
+                          h4
+                            a(href='https://pr1.com/') Project 1
+                        .blog-des.pb30
+                          article Integer nibh turpis, egestas vitae augue nec, rhoncus auctor mi
+                      .read-more-btn
+                        a(href='https://pr1.com/') See More
+                    .blog-text-pic.pb
+                      .blog-pic.pb20
+                        img(src='https://via.placeholder.com/300.png?text=Project 2' alt='img')
+                      .blog-meta.ul-li
+                        ul.meta-list.ul-li
+                          li
+                            span.green.fas.fa-cube
+                            | Javascript
+                      .blog-text.mt5
+                        .blog-title.mb15
+                          h4
+                            a(href='https://pr2.com/') Project 2
+                        .blog-des.pb30
+                          article Nam pulvinar, nisi eget placerat suscipit, purus sem luctus lacus, sit amet tincidunt eros turpis nec nisl
+                      .read-more-btn
+                        a(href='https://pr2.com/') See More
+                    .blog-text-pic.pb
+                      .blog-pic.pb20
+                        img(src='https://via.placeholder.com/300.png?text=Project 3' alt='img')
+                      .blog-meta.ul-li
+                        ul.meta-list.ul-li
+                          li
+                            span.green.fas.fa-cube
+                            | Python
+                      .blog-text.mt5
+                        .blog-title.mb15
+                          h4
+                            a(href='https://pr3.com/') Project 3
+                        .blog-des.pb30
+                          article Sed vel enim vitae lectus lacinia vehicula
+                      .read-more-btn
+                        a(href='https://pr3.com/') See More
+                    .blog-text-pic.pb
+                      .blog-pic.pb20
+                        img(src='https://via.placeholder.com/300.png?text=Project 4' alt='img')
+                      .blog-meta.ul-li
+                        ul.meta-list.ul-li
+                          li
+                            span.green.fas.fa-cube
+                            | Mysql
+                      .blog-text.mt5
+                        .blog-title.mb15
+                          h4
+                            a(href='https://pr4.com/') Project 4
+                        .blog-des.pb30
+                          article Aenean sit amet augue eu elit dictum maximus efficitur a lorem
+                      .read-more-btn
+                        a(href='https://pr4.com/') See More
+            #5.scroll-out
+              .floor.blog
+                .section-content
+                  .section-title.pb30
+                    h2 Contact
+                  .contact-us-content
+                    .contact-address.pb45.disply
+                      .contact-icon-text.text-center
+                        .contact-icon
+                          span.green.fas.fa-map-marker-alt
+                        .contact-text
+                          span.contact-text-head Address
+                          span.contact-text-dec Your address
+                      .contact-icon-text.text-center
+                        .contact-icon
+                          span.green.fas.fa-phone
+                        .contact-text
+                          span.contact-text-head Phone
+                          span.contact-text-dec 0123456789
+                      .contact-icon-text.text-center
+                        .contact-icon
+                          span.green.fas.fa-envelope
+                        .contact-text
+                          span.contact-text-head Mail
+                          span.contact-text-dec example@example.com
+                    .contact-form.pb30
+                      form#contact_form(data-netlify="true" name="contact" method='POST')
+                        .contact-comment-info
+                          input.name(name='name' type='text' placeholder='Your name..')
+                        .contact-comment-info
+                          input.email(name='email' type='email' placeholder='Your email..')
+                        .contact-comment-info.disply.pt30
+                          textarea#message(name='message' placeholder='Your message.. ' rows='8' cols='30')
+                        .send-button.text-uppercase
+                          button(type='submit' value='Submit') Send
